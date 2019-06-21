@@ -1,0 +1,58 @@
+.swiper {
+    &__img {
+        &_1 {
+            width: 90px; 
+            height: 102px;
+        }
+        &_2 {
+            width: 105px; 
+            height: 105px;
+        }
+        &_3 {
+            width: 160px; 
+            height: 105px;
+        }
+        &_4 {
+            width: 180px; 
+            height: 46px; 
+            margin-top: 30px;
+        }
+        &_5 {
+            width: 180px; 
+            height: 50px; 
+            margin-top: 35px;
+        }
+        &_6 {
+            width: 130px; 
+            height: 122px;
+        }
+        &_7 {
+            width: 180px; 
+            height: 20px; 
+            margin-top: 45px;
+        }
+        &_8 {
+            width: 180px; 
+            height: 79px; 
+            margin-top: 20px;
+        }
+        &_9 {
+            width: 100px; 
+            height: 116px
+        }
+        &_10 {
+            width: 180px; 
+            height: 28px; 
+            margin-top: 40px;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+}
+.swiper-slide {
+    @include displayFlex(row, center, center);
+}

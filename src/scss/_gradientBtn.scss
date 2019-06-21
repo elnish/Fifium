@@ -1,0 +1,26 @@
+.gradientBtn {
+    width: 226px;
+    height: 56px;
+    background: linear-gradient(to right, $gredientColorFrom 0px, $gredientColorTo 100%);
+    display: block;
+    color: $textColor;
+    font-size: 14px;
+    line-height: 39px;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    padding: 3px;
+    border: none;
+    &__content {
+        background: $bgColor;
+        @include  displayFlex(row, center, center);
+        height: 100%;
+        transition: background 1s ease, color 1s ease;
+        width: 100%;
+        &_hover {
+            &:hover {
+                color: $bgColor;
+                background: transparent;
+            }
+        }
+    }
+}

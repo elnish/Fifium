@@ -1,0 +1,38 @@
+.header {
+    @include displayFlex(column, center, center);
+    &__bar {
+        width: 100%;
+        @include  displayFlex(row,space-between, center);
+    }
+    &__social-item {
+        margin-right: 20px;
+    }
+    &__social-icon {
+        &_first {
+            @include icon(16px, 23px, '../img/facebook.svg', '../img/facebook-hover.svg');
+         }
+        &_second {
+            @include icon(23px, 22px, '../img/twitter.svg', '../img/twitter-hover.svg');
+        }
+        &_third {
+            @include icon(22px, 22px, '../img/instagram.svg', '../img/instagram-hover.svg');
+        }
+        &_fourth {
+            @include icon(23px, 22px, '../img/linkedin.svg', '../img/linkedin-hover.svg');
+        }
+    }
+    &__language-link {
+        font-size: 15px;
+        color: $textColor;
+        margin-left: 6px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &_active {
+            color: $hoverColor;
+        }
+    }
+    &__logo {
+        width: 144px;
+        max-height: 120px;
+    } 
+}

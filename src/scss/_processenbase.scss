@@ -1,0 +1,55 @@
+.processenbase {
+    width: 85%;
+    height: 1793px;
+    background: url(../img/processenbase.svg) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    &__article-block {
+        max-width: 460px;
+        &_left {
+            text-align: right;
+            text-align-last: right;
+        }
+        &_right {
+            text-align: left;
+            text-align-last: left;
+        }
+        &_first {
+            position: absolute;
+            top: 375px;
+            right: 55%;
+        }
+        &_second {
+            position: absolute;
+            top: 625px;
+            left: 55%;
+        }
+        &_third {
+            position: absolute;
+            top: 880px;
+            right: 55%;
+        }
+        &_fourth {
+            position: absolute;
+            top: 1130px;
+            left: 55%;
+        }
+        &_fifth {
+            position: absolute;
+            top: 1380px;
+            right: 55%;
+        }
+    }
+    &__rt-text {
+        position: absolute;
+        right: -240px;
+        top: 50%;
+        margin-top: -440px;
+        font-size: 7rem;
+        letter-spacing: .1em;
+        transform: rotate(90deg);
+        width: 400px;
+        text-align: center;
+        z-index: 102;
+    }
+}

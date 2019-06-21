@@ -1,0 +1,12 @@
+.text {
+    max-width: 960px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #808285;
+    text-align: justify;
+    letter-spacing: .15em; 
+    &_small {
+        color: $headerTextColor;
+        line-height: 35px;
+    }
+}

@@ -1,0 +1,15 @@
+.menu {
+    width: 100%;
+    &__list {
+        @include  displayFlex(row, space-evenly, center);
+    }
+    &__link {
+        color: $textColor;
+        text-transform: uppercase;
+        &_hover {
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}

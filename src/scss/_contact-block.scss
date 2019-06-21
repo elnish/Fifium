@@ -1,0 +1,91 @@
+.contact-block {
+   
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    &__item {
+        width: 370px;
+        height: 100px;
+        text-align: center;
+    }
+    &__icon {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to right,#13d4ff 0,#1da4ff 100%);
+        transform: rotate(-45deg);
+        display: block;
+        text-align: center;
+        margin: auto;
+        &:hover {
+            .contact-block__item-content {
+                opacity: 0;
+            }
+            .contact-block__pic_phone {
+                background: url(../img/phone_hover_icon.svg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .contact-block__pic_mail {
+                background: url(../img/contact_hover_icon.svg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .contact-block__pic_map {
+                background: url(../img/map_hover_icon.svg) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    &__item-content {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $bgColor;
+        transition: all 400ms linear;
+    }
+    &__pic {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: rotate(45deg);
+        z-index: 99;
+        transition: all 400ms linear;
+        &_phone {
+            width: 23px;
+            height: 24px;
+            margin-left: -12px;
+            margin-top: -12px;
+            background: url(../img/phone_icon.svg) no-repeat;
+            background-size: 100% 100%;
+        }
+        &_mail {
+            width: 30px;
+            height: 22px;
+            margin-left: -16px;
+            margin-top: -12px;
+            background: url(../img/contact_icon.svg) no-repeat;
+            background-size: cover;
+        }
+        &_map {
+            width: 18px;
+            height: 27px;
+            margin-left: -9px;
+            margin-top: -14px;
+            background: url(../img/map_icon.svg) no-repeat;
+            background-size: cover;
+        }
+    }
+    &__info, &__link {
+        color: $textColor;
+        font-size: 18px;
+        letter-spacing: .1em;
+        margin-top: 25px;
+    }
+    &__form {
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+}
